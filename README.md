@@ -6,7 +6,7 @@ IBM Granite.Code is an innovative, lightweight AI coding companion powered by IB
 
 ### Chat with code models
 
-- Chat with an [IBM Granite](https://www.ibm.com/granite) code model to create code, and ask general programming questions.
+- Chat with an [IBM Granite](https://www.ibm.com/granite "target=_blank") code model to create code, and ask general programming questions.
 - Use the chat to explain and extend existing code from your workspace.
 
 ![explain](https://github.com/IBM/ibm-granite-code-ide/raw/HEAD/images/Explain.png)
@@ -30,16 +30,16 @@ Create a comment that describes a function, method, or piece of logic in your ed
 ### Everything is local, configurable by you
 
 - Pick the Granite code model to use for chat and code completion.
-- All models run locally on your laptop by using [Ollama](https://ollama.com). You don't need a cloud service.
+- All models run locally on your laptop by using [Ollama](https://ollama.com "target=_blank"). You don't need a cloud service.
 
 ## Setup
 
-IBM Granite.Code accesses models by using [Ollama](https://ollama.com), which is a widely-used local inferencing engine for LLMs. Ollama wraps the underlying model-serving project [llama.cpp](https://github.com/ggerganov/llama.cpp).
+IBM Granite.Code accesses models by using [Ollama](https://ollama.com "target=_blank"), which is a widely-used local inferencing engine for LLMs. Ollama wraps the underlying model-serving project [llama.cpp](https://github.com/ggerganov/llama.cpp "target=_blank").
 
 ### Install Ollama
 
-- MacOS, Linux, Windows: Download and run the [ollama installer](https://ollama.com/download)
-- On MacOS, you can also use [homebrew](https://brew.sh/) to install Ollama:
+- MacOS, Linux, Windows: Download and run the [ollama installer](https://ollama.com/download "target=_blank")
+- On MacOS, you can also use [homebrew](https://brew.sh/ "target=_blank") to install Ollama:
 
   ```shell
   brew install ollama
@@ -59,7 +59,7 @@ If you receive the message `Error: listen tcp 127.0.0.1:11434: bind: address alr
 
 ### Install the Granite code model
 
-IBM Granite.Code is tested to work with Granite models available in the [Ollama library](https://ollama.com/library/granite-code). It supports having different models for chat and code completion. But to get started, it's enough to use a single model - the `granite-code:8b`.
+IBM Granite.Code is tested to work with Granite models available in the [Ollama library](https://ollama.com/library/granite-code "target=_blank"). It supports having different models for chat and code completion. But to get started, it's enough to use a single model - the `granite-code:8b`.
 
 1. Open a new terminal window.
 2. On the command line, type `ollama run granite-code:8b` to download and deploy the model. You see output similar to the following example:
@@ -123,16 +123,16 @@ _Recommendation:_ If your environment has enough capacity, install the `granite-
 
 IBM Granite.Code does not provide any additional security controls. It's recommended the following steps be taken to properly secure your setup:
 
-- Apply all Visual Studio Code updates to help ensure you have the latest security and bug fixes. For more information, see the [Microsoft's Documentation](https://code.visualstudio.com/docs/setup/setup-overview).
+- Apply all Visual Studio Code updates to help ensure you have the latest security and bug fixes. For more information, see the [Microsoft's Documentation](https://code.visualstudio.com/docs/setup/setup-overview "target=_blank").
 - The IBM Granite.Code extension logs are stored in *.log files under `<your home directory>/.wca`. These files are not encrypted, besides the encryption that your file system provides. Safeguard the logs against improper access.
 
 #### Connecting IBM Granite.Code and Ollama
 
-By default, the Ollama server runs on IP address 127.0.0.1, port 11434, using http as a protocol, on your local device. To use https instead, or go through a proxy server, follow the [Ollama documentation](https://github.com/ollama/ollama/blob/main/docs/faq.md#how-can-i-use-ollama-with-a-proxy-server).
+By default, the Ollama server runs on IP address 127.0.0.1, port 11434, using http as a protocol, on your local device. To use https instead, or go through a proxy server, follow the [Ollama documentation](https://github.com/ollama/ollama/blob/main/docs/faq.md#how-can-i-use-ollama-with-a-proxy-server "target=_blank").
 
 #### Chat conversation storage
 
-IBM Granite.Code stores all your chat conversations locally in your file system under `<your home directory>/.wca/chat.db`, in a database format defined by [SQLite](https://www.sqlite.org/index.html). IBM Granite.Code does _not_ share these conversations with anyone. This file is not encrypted, besides the encryption that your file system provides. Safeguard this file against improper access.
+IBM Granite.Code stores all your chat conversations locally in your file system under `<your home directory>/.wca/chat.db`, in a database format defined by [SQLite](https://www.sqlite.org/index.html "target=_blank"). IBM Granite.Code does _not_ share these conversations with anyone. This file is not encrypted, besides the encryption that your file system provides. Safeguard this file against improper access.
 
 #### Telemetry data
 
