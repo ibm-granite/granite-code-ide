@@ -18,6 +18,8 @@ Complete the line that you're currently typing:
 
 ![single-line](images/Single-line.gif)
 
+<img src="images/Single-line.gif" height=200>
+
 And even full methods and functions:
 
 ![multi-line](images/Multi-line.gif)
