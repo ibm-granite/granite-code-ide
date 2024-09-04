@@ -16,19 +16,17 @@ TODO: GIF
 
 Complete the line that you're currently typing:
 
-![single-line](images/Single-line.gif)
-
-<img src="images/Single-line.gif" height=200>
+<img src="images/Single-line.gif" height=200 alt="Single-line completion in IBM Granite.Code">
 
 And even full methods and functions:
 
-![multi-line](images/Multi-line.gif)
+<img src="images/Multi-line.gif" height=200 alt="Multi-line completion in IBM Granite.Code">
 
 ### Turn comments into code
 
 Create a comment that describes a function, method, or piece of logic in your editor, and have IBM Granite.Code create it.
 
-![comment-to-code](images/comment-to-code.gif)
+<img src="images/comment-to-code.gif" height=200 alt="Comment to code generation in IBM Granite.Code">
 
 ### Everything is local, configurable by you
 
@@ -146,8 +144,7 @@ IBM Granite.Code does _not_ collect any telemetry data. In general, IBM Granite.
 ### Starting the chat
 
 1. Open the IBM Granite.Code view by selecting _View -> Open View -> IBM Granite.Code_ in the menu, or clicking the _IBM Granite.Code_ icon in the sidebar
-
-![granite-icon](images/granite-icon.png)
+<img src="images/granite-icon.png" height=50 alt="IBM Granite.Code View Icon">
 
 2. The chat panel opens to the left of the Visual Studio Code editor.
 3. To move the chat, drag the icon to the right or bottom of the editor.
@@ -158,7 +155,7 @@ IBM Granite.Code does _not_ collect any telemetry data. In general, IBM Granite.
 
 Enter a free-text question or instruction and click **Enter**. IBM Granite.Code sends your input to the code model, and shows the response in the chat.  
 
-![nl-chat](images/NL-chat.png)
+<img src="images/NL-chat.png" height=200 alt="IBM Granite.Code Chat">
 
 #### Reference code
 
@@ -169,7 +166,7 @@ To ask questions or refine a specific file, class, function, or method in your w
 3. Start typing the characters of the file, class, or method name you want to reference. The list filters automatically.
 4. Select the reference.
 
-![references](images/references.gif)
+<img src="images/references.gif" height=200 alt="IBM Granite.Code code references">
 
 IBM Granite.Code sends the contents of the reference automatically to the model as part of your message.
 
@@ -218,7 +215,7 @@ To rename a chat conversation:
    3. Select the menu on the right of the conversation.
    4. Click **Rename**.
 
-![Chat-Options](images/Chat-Options.png)
+<img src="images/Chat-Options.png" height=100 alt="IBM Granite.Code chat options">
 
 #### Writing effective chat messages
 
@@ -239,7 +236,7 @@ IBM Granite.Code and the Granite code models are created to answer questions tha
 2. IBM Granite.Code adds a code suggestion to complete the line that you typed.
 3. Press **Tab** to accept the suggestion.
 
-![single-line](images/Single-line.gif)
+<img src="images/Single-line.gif" height=200 alt="Single-line completion in IBM Granite.Code">
 
 ### Multi-line completion
 
@@ -248,7 +245,7 @@ IBM Granite.Code and the Granite code models are created to answer questions tha
 3. IBM Granite.Code adds a code suggestion to complete the line that you typed, and adds code lines.
 4. Press **Tab** to accept the suggestion.
 
-![multi-line](images/Multi-line.gif)
+<img src="images/Multi-line.gif" height=200 alt="Multi-line completion in IBM Granite.Code">
 
 ### Comment-to-code
 
@@ -257,7 +254,7 @@ IBM Granite.Code and the Granite code models are created to answer questions tha
 3. IBM Granite.Code adds a code suggestion based on your comment.
 4. Press **Tab** to accept the suggestion.
 
-![comment-to-code](images/comment-to-code.gif)
+<img src="images/comment-to-code.gif" height=200 alt="Comment to code generation in IBM Granite.Code">
 
 ### Tips for generating code
 
