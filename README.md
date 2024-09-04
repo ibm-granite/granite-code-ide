@@ -10,7 +10,6 @@ IBM Granite.Code is an innovative, lightweight AI coding companion powered by IB
 - Use the chat to explain and extend existing code from your workspace.
 
 ![explain](images/Explain.png)
-TODO: GIF
 
 ### Code completion
 
@@ -20,7 +19,7 @@ Complete the line that you're currently typing:
 
 And even full methods and functions:
 
-<img src="images/Multi-line.gif" height=200 alt="Multi-line completion in IBM Granite.Code">
+<img src="images/Multi-line.gif" height=350 alt="Multi-line completion in IBM Granite.Code">
 
 ### Turn comments into code
 
@@ -143,9 +142,7 @@ IBM Granite.Code does _not_ collect any telemetry data. In general, IBM Granite.
 
 ### Starting the chat
 
-1. Open the IBM Granite.Code view by selecting _View -> Open View -> IBM Granite.Code_ in the menu, or clicking the _IBM Granite.Code_ icon in the sidebar
-<img src="images/granite-icon.png" height=50 alt="IBM Granite.Code View Icon">
-
+1. Open the IBM Granite.Code view by selecting _View -> Open View -> IBM Granite.Code_ in the menu, or clicking the _IBM Granite.Code_ icon in the sidebar <img src="images/granite-icon.png" height=30 alt="IBM Granite.Code View Icon">
 2. The chat panel opens to the left of the Visual Studio Code editor.
 3. To move the chat, drag the icon to the right or bottom of the editor.
 
@@ -215,7 +212,7 @@ To rename a chat conversation:
    3. Select the menu on the right of the conversation.
    4. Click **Rename**.
 
-<img src="images/Chat-Options.png" height=100 alt="IBM Granite.Code chat options">
+<img src="images/Chat-Options.png" height=200 alt="IBM Granite.Code chat options">
 
 #### Writing effective chat messages
 
@@ -245,7 +242,7 @@ IBM Granite.Code and the Granite code models are created to answer questions tha
 3. IBM Granite.Code adds a code suggestion to complete the line that you typed, and adds code lines.
 4. Press **Tab** to accept the suggestion.
 
-<img src="images/Multi-line.gif" height=200 alt="Multi-line completion in IBM Granite.Code">
+<img src="images/Multi-line.gif" height=350 alt="Multi-line completion in IBM Granite.Code">
 
 ### Comment-to-code
 
@@ -274,7 +271,7 @@ Use in-editor code generation to:
 
 #### Comment-to-code: use descriptive comments, not instructions
 
-When you use comment-to-code in the editor, write a comment that describes the intended behavior - just like what you do when you write comments for code you wrote. For example, use `//return even numbers from an arraylist` or `//method that returns even numbers from an arraylist`. Don't write your comment as an instruction, such as `//write a method that returns even numbers from an arraylist`. Granite models are trained to complete code on data that contains many "typical", descriptive comments, so these kinds of comments yield better results. 
+When you use comment-to-code in the editor, write a comment that describes the intended behavior - just like what you do when you write comments for code you wrote. For example, use `//return even numbers from an arraylist` or `//method that returns even numbers from an arraylist`. Don't write your comment as an instruction, such as `//write a method that returns even numbers from an arraylist`. Granite models are trained to complete code on data that contains many "typical", descriptive comments, so these kinds of comments yield better results.
 
 #### Context used for in-editor code generation
 
