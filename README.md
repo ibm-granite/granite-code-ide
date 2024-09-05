@@ -2,11 +2,11 @@
 
 ## Features
 
-IBM Granite.Code is an innovative, lightweight AI coding companion powered by IBM's state-of-the-art Granite large language model. Available at no charge, this tool offers robust, contextually aware AI coding assistance for popular programming languages including Python, Java, C/C++, JavaScript, and more. Seamlessly integrated into Visual Studio Code, Granite.Code accelerates developer’s productivity and simplifies coding tasks by providing powerful AI support hosted locally on the developer’s laptop or workstation by using Ollama.
+IBM Granite.Code is an innovative, lightweight AI coding companion built for IBM’s state-of-the-art Granite large language models. This companion offers robust, contextually aware AI coding assistance for popular programming languages including Go, C, C++, Java, JavaScript, Python, TypeScript and more. Seamlessly integrated into Visual Studio Code, Granite.Code accelerates development productivity and simplifies coding tasks by providing powerful AI support hosted locally on the developer’s laptop or workstation using Ollama.
 
 ### Chat with code models
 
-- Chat with an [IBM Granite](https://www.ibm.com/granite "target=_blank") code model to create code, and ask general programming questions.
+- Chat with an <a href="https://www.ibm.com/granite">IBM Granite</a> code model to create code, and ask general programming questions.
 - Use the chat to explain and extend existing code from your workspace.
 
 ![explain](https://github.com/ibm-granite/granite-code-ide/raw/HEAD/images/Explain.png)
@@ -29,17 +29,18 @@ Create a comment that describes a function, method, or piece of logic in your ed
 
 ### Everything is local, configurable by you
 
-- Pick the Granite code model to use for chat and code completion.
-- All models run locally on your laptop by using [Ollama](https://ollama.com "target=_blank"). You don't need a cloud service.
+- Install the granite 8b code instruct model for both chat and code completion.
+- Optionally, install the granite 8b code base model for code completion.
+- These models run locally on your laptop using <a href="https://ollama.com" target="_blank">Ollama</a>.
 
 ## Setup
 
-IBM Granite.Code accesses models by using [Ollama](https://ollama.com "target=_blank"), which is a widely-used local inferencing engine for LLMs. Ollama wraps the underlying model-serving project [llama.cpp](https://github.com/ggerganov/llama.cpp "target=_blank").
+IBM Granite.Code accesses models through <a href="https://ollama.com" target="_blank">Ollama</a>, which is a widely-used local inferencing engine for LLMs. Ollama wraps the underlying model-serving project <a href="https://github.com/ggerganov/llama.cpp" target="_blank">llama.cpp</a>.
 
 ### Install Ollama
 
-- MacOS, Linux, Windows: Download and run the [ollama installer](https://ollama.com/download "target=_blank")
-- On MacOS, you can also use [homebrew](https://brew.sh/ "target=_blank") to install Ollama:
+- MacOS, Linux, Windows: Download and run the <a href="https://ollama.com/download" target="_blank">ollama installer</a>
+- On MacOS, you can also use <a href="https://brew.sh/" target="_blank">homebrew</a> to install Ollama:
 
   ```shell
   brew install ollama
@@ -59,7 +60,7 @@ If you receive the message `Error: listen tcp 127.0.0.1:11434: bind: address alr
 
 ### Install the Granite code model
 
-IBM Granite.Code is tested to work with Granite models available in the [Ollama library](https://ollama.com/library/granite-code "target=_blank"). It supports having different models for chat and code completion. But to get started, it's enough to use a single model - the `granite-code:8b`.
+Get started with IBM Granite.Code by installing the `granite-code:8b` model available in the <a href="https://ollama.com/library/granite-code" target="_blank">Ollama library</a>.
 
 1. Open a new terminal window.
 2. On the command line, type `ollama run granite-code:8b` to download and deploy the model. You see output similar to the following example:
@@ -108,14 +109,12 @@ By default, the Ollama server runs on IP address `127.0.0.1`, port `11434`, usin
 ### Configure the Granite models to use
 
 By default, IBM Granite.Code uses the `granite-code:8b` model for both chat and code completion.
+If your environment has enough capacity, install the `granite-code:8b-base` model, and use it as _Local Code Gen Model_ as follows:
 To use a different model:
 
-1. Install the Granite model that you want to use. For more information, see [Install the Granite code model](#install-the-granite-code-model).
-2. Use the command line to run `ollama list` to get the `NAME` of the model.
-3. Open the extension settings of IBM Granite.Code.
-4. Update the model name for either _Local Chat Model_ or _Local Code Gen Model_, or both.
-
-_Recommendation:_ If your environment has enough capacity, install the `granite-code:8b-base` model, and use it as _Local Code Gen Model_.
+1. Install the `granite-code:8b-base` model. See [Install the Granite code model](#install-the-granite-code-model).
+2. Open the extension settings of IBM Granite.Code.
+3. Update the model name for either _Local Code Gen Model_ to `granite-code:8b-base`.
 
 ### Securing your setup
 
@@ -123,16 +122,16 @@ _Recommendation:_ If your environment has enough capacity, install the `granite-
 
 IBM Granite.Code does not provide any additional security controls. It's recommended the following steps be taken to properly secure your setup:
 
-- Apply all Visual Studio Code updates to help ensure you have the latest security and bug fixes. For more information, see the [Microsoft's Documentation](https://code.visualstudio.com/docs/setup/setup-overview "target=_blank").
+- Apply all Visual Studio Code updates to help ensure you have the latest security and bug fixes. For more information, see the <a href="https://code.visualstudio.com/docs/setup/setup-overview" target="_blank">Microsoft Documentation</a>.
 - The IBM Granite.Code extension logs are stored in *.log files under `<your home directory>/.wca`. These files are not encrypted, besides the encryption that your file system provides. Safeguard the logs against improper access.
 
 #### Connecting IBM Granite.Code and Ollama
 
-By default, the Ollama server runs on IP address 127.0.0.1, port 11434, using http as a protocol, on your local device. To use https instead, or go through a proxy server, follow the [Ollama documentation](https://github.com/ollama/ollama/blob/main/docs/faq.md#how-can-i-use-ollama-with-a-proxy-server "target=_blank").
+By default, the Ollama server runs on IP address 127.0.0.1, port 11434, using http as a protocol, on your local device. To use https instead, or go through a proxy server, follow the <a href="https://github.com/ollama/ollama/blob/main/docs/faq.md#how-can-i-use-ollama-with-a-proxy-server" target="_blank">Ollama documentation</a>.
 
 #### Chat conversation storage
 
-IBM Granite.Code stores all your chat conversations locally in your file system under `<your home directory>/.wca/chat.db`, in a database format defined by [SQLite](https://www.sqlite.org/index.html "target=_blank"). IBM Granite.Code does _not_ share these conversations with anyone. This file is not encrypted, besides the encryption that your file system provides. Safeguard this file against improper access.
+IBM Granite.Code stores all your chat conversations locally in your file system under `<your home directory>/.wca/chat.db`, in a database format defined by <a href="https://www.sqlite.org/index.html" target="_blank">SQLite</a>. IBM Granite.Code does _not_ share these conversations with anyone. This file is not encrypted, besides the encryption that your file system provides. Safeguard this file against improper access.
 
 #### Telemetry data
 
@@ -156,7 +155,7 @@ Enter a free-text question or instruction and click **Enter**. IBM Granite.Code 
 
 #### Reference code
 
-To ask questions or refine a specific file, class, function, or method in your workspace, you can use `code references`. These references provide important context for the LLM, and can help to increase the accuracy of the answer.
+To ask questions or refine a specific file, class, function, or method in your workspace, you can use _code references_. These references provide important context for the LLM, and can help to increase the accuracy of the answer.
 
 1. As part of your chat message, type the `@` sign.
 2. A screen pops up, showing all files, classes, and methods from your workspace.
@@ -223,7 +222,7 @@ To rename a chat conversation:
 - Use file and method references in your message to provide relevant context. For example, if you want the model to create a method that is similar to another method, add _"similar to `@<method>`"_ to your message.
 - If you find the answers become less relevant, or if you start a new task, create a new chat conversation, and work from there. It is better to have many short chat conversations, each with a specific context, rather than one large conversation that might confuse the model with different and unrelated chat messages.
 
-IBM Granite.Code and the Granite code models are created to answer questions that are related to code, general programming, and software engineering. The IDE doesn't restrict you in asking any kind of question, but keep in mind that the quality for nonprogramming questions isn't what you experience from noncode LLMs.
+BM Granite.Code and the Granite code models are created to answer questions that are related to code, general programming, and software engineering. While the IDE doesn’t restrict your questions or prompts, the Granite Code models were not designed for language tasks and are not appropriate for such use. Any such use is at your own risk, and you may not rely on resulting output. Please validate all output independently and consider deploying a Hate Abuse Profanity (HAP) filter.
 
 ## Using in-editor code completion and comment-to-code
 
