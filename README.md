@@ -1,7 +1,7 @@
 # License
-- The license for IBM Granite.Code can be found in the [[product-licenses](./product-licenses/) folder in this repository.
+- The license for IBM Granite.Code can be found in the [product-licenses](./product-licenses/) folder in this repository.
 
-You can use this repository to add issues for IBM Granite.Code. The license for issues, discussion, and any files or samples shared in issues can be found in the [LICENSE](./LICENSE) file.
+- You can use this repository to add issues for IBM Granite.Code. The license for issues, discussion, and any files or samples shared in issues can be found in the [LICENSE](./LICENSE) file.
 
 
 # IBM Granite.Code
