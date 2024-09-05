@@ -222,7 +222,7 @@ To rename a chat conversation:
 - Use file and method references in your message to provide relevant context. For example, if you want the model to create a method that is similar to another method, add _"similar to `@<method>`"_ to your message.
 - If you find the answers become less relevant, or if you start a new task, create a new chat conversation, and work from there. It is better to have many short chat conversations, each with a specific context, rather than one large conversation that might confuse the model with different and unrelated chat messages.
 
-BM Granite.Code and the Granite code models are created to answer questions that are related to code, general programming, and software engineering. While the IDE doesn’t restrict your questions or prompts, the Granite Code models were not designed for language tasks and are not appropriate for such use. Any such use is at your own risk, and you may not rely on resulting output. Please validate all output independently and consider deploying a Hate Abuse Profanity (HAP) filter.
+IBM Granite.Code and the Granite code models are created to answer questions that are related to code, general programming, and software engineering. While the IDE doesn’t restrict your questions or prompts, the Granite Code models were not designed for language tasks and are not appropriate for such use. Any such use is at your own risk, and you may not rely on resulting output. Please validate all output independently and consider deploying a Hate Abuse Profanity (HAP) filter.
 
 ## Using in-editor code completion and comment-to-code
 
