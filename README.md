@@ -6,7 +6,7 @@ IBM Granite.Code is an innovative, lightweight AI coding companion built for IBM
 
 ### Chat with code models
 
-- Chat with an <a href="https://www.ibm.com/granite">IBM Granite</a> code model to create code, and ask general programming questions.
+- Chat with an <a href="https://www.ibm.com/granite" target="_blank">IBM Granite</a> code model to create code, and ask general programming questions.
 - Use the chat to explain and extend existing code from your workspace.
 
 ![explain](https://github.com/ibm-granite/granite-code-ide/raw/HEAD/images/Explain.png)
