@@ -1,3 +1,9 @@
+# License
+- The license for IBM Granite.Code can be found in the [[product-licenses](./product-licenses/) folder in this repository.
+
+You can use this repository to add issues for IBM Granite.Code. The license for issues, discussion, and any files or samples shared in issues can be found in the [LICENSE](./LICENSE) file.
+
+
 # IBM Granite.Code
 
 ## Features
@@ -237,7 +243,7 @@ IBM Granite.Code and the Granite code models are created to answer questions tha
 ### Multi-line completion
 
 1. Start typing a line of code.
-2. Press `Option` + `.`. (Mac) or `Alt`+ `.` (Windows)
+2. Press `Option` + `.` (Mac) or `Alt`+ `.` (Windows)
 3. IBM Granite.Code adds a code suggestion to complete the line that you typed, and adds code lines.
 4. Press **Tab** to accept the suggestion.
 
@@ -246,7 +252,7 @@ IBM Granite.Code and the Granite code models are created to answer questions tha
 ### Comment-to-code
 
 1. Type a comment.
-2. Press `Option` + `.`. (Mac) or `Alt`+ `.` (Windows)
+2. Press `Option` + `.` (Mac) or `Alt`+ `.` (Windows)
 3. IBM Granite.Code adds a code suggestion based on your comment.
 4. Press **Tab** to accept the suggestion.
 
