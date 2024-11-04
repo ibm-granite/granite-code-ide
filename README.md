@@ -45,22 +45,17 @@ IBM Granite.Code accesses models through <a href="https://ollama.com" target="_b
 
 ### Install Ollama
 
-- MacOS, Linux, Windows: Download and run the <a href="https://ollama.com/download" target="_blank">ollama installer</a>
-- On MacOS, you can also use <a href="https://brew.sh/" target="_blank">homebrew</a> to install Ollama:
-
-  ```shell
-  brew install ollama
-  ```
+MacOS, Linux, Windows: Download and run the <a href="https://ollama.com/download" target="_blank">ollama installer</a>
 
 ### If already installed, update Ollama to the latest stable version
 
-#### If you have installed Ollama via brew (for Mac)
+#### If you have installed Ollama via package installer:
+Ollama on macOS and Windows will automatically download updates. Click on the taskbar or menubar item and then click "Restart to update" to apply the update. Updates can also be installed by downloading the latest version manually.
+
+#### On MacOS, If you have installed Ollama via brew, run the command to upgrade:
 ```
 brew upgrade ollama
 ```
-
-#### If you have installed Ollama via package installer:
-Ollama on macOS and Windows will automatically download updates. Click on the taskbar or menubar item and then click "Restart to update" to apply the update. Updates can also be installed by downloading the latest version manually.
 
 #### On Linux, re-run the install script:
 ```
