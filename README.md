@@ -15,23 +15,23 @@ Watsonx Code Assistant Individual is an innovative, lightweight AI coding compan
 - Chat with an <a href="https://www.ibm.com/granite" target="_blank">IBM Granite</a> code model to create code, and ask general programming questions.
 - Use the chat to explain and extend existing code from your workspace.
 
-![explain](https://github.com/ibm-granite/granite-code-ide/raw/HEAD/images/Explain.png)
+![explain](https://github.com/ibm-granite/watsonx-code-assistant-individual/raw/HEAD/images/Explain.png)
 
 ### Code completion
 
 Complete the line that you're currently typing:
 
-<img src="https://github.com/ibm-granite/granite-code-ide/raw/HEAD/images/Single-line.gif" height=200 alt="Single-line completion in watsonx Code Assistant Individual">
+<img src="https://github.com/ibm-granite/watsonx-code-assistant-individual/raw/HEAD/images/Single-line.gif" height=200 alt="Single-line completion in watsonx Code Assistant Individual">
 
 And even full methods and functions:
 
-<img src="https://github.com/ibm-granite/granite-code-ide/raw/HEAD/images/Multi-line.gif" height=350 alt="Multi-line completion in watsonx Code Assistant Individual">
+<img src="https://github.com/ibm-granite/watsonx-code-assistant-individual/raw/HEAD/images/Multi-line.gif" height=350 alt="Multi-line completion in watsonx Code Assistant Individual">
 
 ### Turn comments into code
 
 Create a comment that describes a function, method, or piece of logic in your editor, and have watsonx Code Assistant Individual create it.
 
-<img src="https://github.com/ibm-granite/granite-code-ide/raw/HEAD/images/comment-to-code.gif" height=200 alt="Comment to code generation in watsonx Code Assistant Individual">
+<img src="https://github.com/ibm-granite/watsonx-code-assistant-individual/raw/HEAD/images/comment-to-code.gif" height=200 alt="Comment to code generation in watsonx Code Assistant Individual">
 
 ### Everything is local, configurable by you
 
@@ -110,7 +110,7 @@ Get started with watsonx Code Assistant Individual by installing the `granite-co
 
 ### Install the watsonx Code Assistant Individual extension
 
-1. Open the watsonx Code Assistant Individual extension page in the Visual Studio Marketplace.
+1. Open the [watsonx Code Assistant](https://marketplace.visualstudio.com/items?itemName=IBM.wca-core&ssr=false#overview) extension page in the Visual Studio Marketplace.
 2. Click **Install** on the Marketplace page.
 3. In Visual Studio Code, click **Install** on the extension.
 
@@ -118,7 +118,7 @@ Get started with watsonx Code Assistant Individual by installing the `granite-co
 
 By default, the Ollama server runs on IP address `127.0.0.1`, port `11434`, using http as a protocol. If you change the IP address or the port where Ollama is available:
 
-1. Open the extension settings of watsonx Code Assistant Individual.
+1. Open the extension settings.
 2. Locate the entry for _API Host_.
 3. Add the host IP and port.
 
@@ -129,7 +129,7 @@ If your environment has capacity, install the `granite-code:8b-base` model, and 
 To use a different model:
 
 1. Install the `granite-code:8b-base` model. See [Install the Granite code model](#install-the-granite-code-model).
-2. Open the extension settings of watsonx Code Assistant Individual.
+2. Open the extension settings.
 3. Update the model name for either _Local Code Gen Model_ to `granite-code:8b-base`.
 
 ### Securing your setup
@@ -157,7 +157,7 @@ Watsonx Code Assistant Individual does _not_ collect any telemetry data. In gene
 
 ### Starting the chat
 
-1. Open the watsonx Code Assistant Individual view by selecting _View -> Open View -> watsonx Code Assistant Individual_ in the menu, or clicking the _watsonx Code Assistant Individual_ icon in the sidebar <img src="https://github.com/ibm-granite/granite-code-ide/raw/HEAD/images/granite-icon.png" height=20 alt="IBM Granite.Code View Icon">
+1. Open the watsonx Code Assistant Individual view by selecting _View -> Open View -> watsonx Code Assistant_ in the menu, or clicking the _watsonx Code Assistant_ icon in the sidebar <img src="https://github.com/ibm-granite/watsonx-code-assistant-individual/raw/HEAD/images/wca-portfolio.svg" height=20 alt="watsonx Code Assistant icon">
 2. The chat panel opens to the left of the Visual Studio Code editor.
 3. To move the chat, drag the icon to the right or bottom of the editor.
 
@@ -167,7 +167,7 @@ Watsonx Code Assistant Individual does _not_ collect any telemetry data. In gene
 
 Enter a free-text question or instruction and click **Enter**. watsonx Code Assistant Individual sends your input to the code model, and shows the response in the chat.  
 
-<img src="https://github.com/ibm-granite/granite-code-ide/raw/HEAD/images/NL-chat.png" height=200 alt="watsonx Code Assistant Individual Chat">
+<img src="https://github.com/ibm-granite/watsonx-code-assistant-individual/raw/HEAD/images/NL-chat.png" height=200 alt="watsonx Code Assistant Individual Chat">
 
 #### Reference code
 
@@ -178,9 +178,9 @@ To ask questions or refine a specific file, class, function, or method in your w
 3. Type the characters of the file, class, or method name that you want to reference. The list filters automatically.
 4. Select the reference.
 
-<img src="https://github.com/ibm-granite/granite-code-ide/raw/HEAD/images/references.gif" height=200 alt="watsonx Code Assistant Individual code references">
+<img src="https://github.com/ibm-granite/watsonx-code-assistant-individual/raw/HEAD/images/references.gif" height=200 alt="watsonx Code Assistant Individual code references">
 
-watsonx Code Assistant Individual sends the contents of the reference automatically to the model as part of your message.
+Watsonx Code Assistant Individual sends the contents of the reference automatically to the model as part of your message.
 
 Chat message examples:
 
@@ -227,7 +227,7 @@ To rename a chat conversation:
    3. Select the menu on the right of the conversation.
    4. Click **Rename**.
 
-<img src="https://github.com/ibm-granite/granite-code-ide/raw/HEAD/images/Chat-Options.png" height=200 alt="watsonx Code Assistant Individual chat options">
+<img src="https://github.com/ibm-granite/watsonx-code-assistant-individual/raw/HEAD/images/Chat-Options.png" height=200 alt="watsonx Code Assistant Individual chat options">
 
 #### Writing effective chat messages
 
@@ -238,7 +238,7 @@ To rename a chat conversation:
 - Use file and method references in your message to provide relevant context. For example, if you want the model to create a method that is similar to another method, add _"similar to `@<method>`"_ to your message.
 - If you find the answers become less relevant, or if you start a new task, create a new chat conversation, and work from there. It is better to have many short chat conversations, each with a specific context, rather than one large conversation that might confuse the model with different and unrelated chat messages.
 
-Watsonx Code Assistant Individual and the Granite code models are created to answer questions that are related to code, general programming, and software engineering. While the IDE doesn’t restrict your questions or prompts, the Granite Code models are not designed for language tasks. Any such use is at your own risk, and results can be unreliable so validate all output independently and consider deploying a Hate Abuse Profanity (HAP) filter.
+Watsonx Code Assistant Individual and the Granite code models are created to answer questions that are related to code, general programming, and software engineering. While the IDE doesn’t restrict your questions or prompts, the Granite code models are not designed for language tasks. Any such use is at your own risk, and results can be unreliable so validate all output independently and consider deploying a Hate Abuse Profanity (HAP) filter.
 
 ## Using in-editor code completion and comment-to-code
 
@@ -248,7 +248,7 @@ Watsonx Code Assistant Individual and the Granite code models are created to ans
 2. Watsonx Code Assistant Individual adds a code suggestion to complete the line that you typed.
 3. Press **Tab** to accept the suggestion.
 
-<img src="https://github.com/ibm-granite/granite-code-ide/raw/HEAD/images/Single-line.gif" height=200 alt="Single-line completion in watsonx Code Assistant Individual">
+<img src="https://github.com/ibm-granite/watsonx-code-assistant-individual/raw/HEAD/images/Single-line.gif" height=200 alt="Single-line completion in watsonx Code Assistant Individual">
 
 ### Multi-line completion
 
@@ -257,7 +257,7 @@ Watsonx Code Assistant Individual and the Granite code models are created to ans
 3. Watsonx Code Assistant Individual adds a code suggestion to complete the line that you typed, and adds code lines.
 4. Press **Tab** to accept the suggestion.
 
-<img src="https://github.com/ibm-granite/granite-code-ide/raw/HEAD/images/Multi-line.gif" height=350 alt="Multi-line completion in watsonx Code Assistant Individual">
+<img src="https://github.com/ibm-granite/watsonx-code-assistant-individual/raw/HEAD/images/Multi-line.gif" height=350 alt="Multi-line completion in watsonx Code Assistant Individual">
 
 ### Comment-to-code
 
@@ -266,7 +266,7 @@ Watsonx Code Assistant Individual and the Granite code models are created to ans
 3. Watsonx Code Assistant Individual adds a code suggestion based on your comment.
 4. Press **Tab** to accept the suggestion.
 
-<img src="https://github.com/ibm-granite/granite-code-ide/raw/HEAD/images/comment-to-code.gif" height=200 alt="Comment to code generation in watsonx Code Assistant Individual">
+<img src="https://github.com/ibm-granite/watsonx-code-assistant-individual/raw/HEAD/images/comment-to-code.gif" height=200 alt="Comment to code generation in watsonx Code Assistant Individual">
 
 ### Tips for generating code
 
